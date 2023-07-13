@@ -1,2 +1,2 @@
 -- Create a =n index
-CREATE INDEX idx_name_first_score ON names (SUBSTRING(name, 1, 1), SUBSTRING(score, 1, 1));
+CREATE INDEX idx_name_first_score on names(name(1), score);
